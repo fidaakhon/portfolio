@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DevelopWithFida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid" id="nav1">
+        <div>
+        <a class="navbar-brand" href="#">DevelopWithFida</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        <div class="  " id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main  -->
+    <div class=" card1 card mb-3" >
+      <div class="row g-0">
+
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Fida ur Rehman</h5>
+            <p class="card-text">I am a front end web developer.I can build static as well as dynamic responsive website according to my client,s wish, desire and requirements.
+              Creating webpages is my hobby and i have built many websites as well.
+            I can create any kind of charming, responsive, interactive and SEO optimized webpages.I can built webpages through coding or WordPress as you want or need.
+            I am expert in HTML, CSS, javascript, Bootstrap, Tailwind and WordPress.
+            Contact me for more details and download my CV here. 
+            </p>
+            <button><a href="MY CV3.pdf" target="_blank">Download CV</a></button>
+          </div>
+        </div>
+        <div class=" img1 col-md-4">
+          <img src="pic3.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+      </div>
+    </div>
+
+    <!-- my skills  -->
+    <div  class="progressflex">
+      <h1 id="skills">MY Skills</h1>
+    <div class="progresbars">
+
+      <p>HTML</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+   <p>CSS</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <p>javascript</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <p>Bootstrap & Tailwind</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <p>WordPress</p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 80%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+   </div>
+  </div>
+
+    <!-- my services  -->
+    <h1 id="Services">My Servces</h1>
+    <div class="container2 d-flex p-4 justify-content-evenly">
+      
+    <div class="card" style="width: 18rem;">
+      <img src="icon.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4>WebPage Building</h4>
+        <p class="card-text">I can build any kind of webpage according to my client's need and desire by using HTML, CSS and Javascript.</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="responsive.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4>Making Page Responsive</h4>
+        <p class="card-text">I will make your webpage responsive for each kind of screen size or develop a responsive page for you.</p>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="SEO.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4>SEO</h4>
+        <p class="card-text">I am expert in developing SEO optimized webpages I will also do SEO of your built in pages.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact us  -->
+  <h1 id="contact">Contact US</h1>
+  <div class="forms progresbars">
+  <form  onsubmit="sendEmail(); reset(); return false">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="form-floating" >
+      <textarea class="form-control" name="message" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+      <label for="floatingTextarea2">Comments</label>
+    </div>
+    <button type="submit" class="btn btn-primary my-2">Submit</button>
+  </form>
+ </div>
+
+
+
+
+
+    <!-- footer  -->
+
+    <div class="footer">
+
+      <div class="footerManu">
+        <h3>Manu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">My Skills</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footerMedia">
+        <div class="heading">
+         <p > Contact Us Through Social Media </p>
+        </div>
+        <div class="icon">
+         <a href="https://www.linkedin.com/in/fida-ur-rahman-a2006421b/" target="_blank"> <img src="linkedin.png" alt=""></a>
+         <a href="https://web.facebook.com/fidasiddiqi.akhonzada" target="_blank"> <img src="Facebook_Logo.png" alt=""></a>
+         <a href="https://www.instagram.com/fidaa_akhoon17/" target="_blank" rel="noopener noreferrer"> <img src="Instagram.png" alt=""></a>
+         <a href="https://twitter.com/fida_akhoon?t=et9tpFBgL9FnUGWRZ-Du7A&s=08" target="_blank" rel="noopener noreferrer"> <img src="twiter2.png" alt=""></a>
+          
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+  </body>
+</html>
